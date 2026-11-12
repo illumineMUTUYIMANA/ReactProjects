@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-list{
+  list-style: none;
+  display: flex;
+
+}
+.header{
+  margin: 0;
+  padding:6px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgb(136, 186, 51) ,rgb(174, 209, 15) ,red);
+}
+.nav-list-items{
+  margin-right: 10px;
+  font-size: 15px;
+}
+.nav-log{
+  width: 55px;
+}
+.content{
+  padding: 12px 18px;
+}
+.li{
+  padding: 20px;
+  
+}

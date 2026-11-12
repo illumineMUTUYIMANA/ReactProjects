@@ -1,0 +1,21 @@
+body{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* min-height: 100vh; */
+}
+
+h1{
+  color: rgb(229, 228, 228);
+  font-size: 50px;
+  font-family: Arial, sans-serif;
+  margin-bottom: 30px;
+}
+
+.add{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+

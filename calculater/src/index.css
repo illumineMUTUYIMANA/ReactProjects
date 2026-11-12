@@ -1,0 +1,14 @@
+@import "tailwindcss";
+.box > p{
+  @apply p-6 hover:cursor-pointer border border-gray-400 text-center font-medium;
+
+}
+.operator{
+  @apply bg-orange-400 text-white text-2xl;
+
+}
+h2{
+  @apply text-white;
+  
+}
+

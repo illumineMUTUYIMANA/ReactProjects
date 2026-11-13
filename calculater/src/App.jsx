@@ -36,6 +36,10 @@ export default function App(){
       setNum(Number(num1)/100)
     }else if(e.target.innerText==='+/-'){
       setNum(Number(num1)*(-1))
+    }else if(e.target.innerText==='.'&& num1===0){
+      setNum('0.');
+    }else if(num1.includes('.')&& e.target.innerText==='.'){
+      return
     }
     else if (num1==='0'|| num1===0 ||num2.current){
       // results.push(e.target.innerText)

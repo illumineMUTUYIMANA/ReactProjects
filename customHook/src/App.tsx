@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
     const [info, setInfo] = useState <T | null>(null);
     const [loading,setLoading]= useState(true);
     const [err,setError] = useState('')
+    interface obt{
+      [key:string]:string|number
+    }
 
     useEffect(
     ()=>{
@@ -12,7 +15,8 @@ import { useEffect, useState } from "react";
         try{
           const response = await fetch(url) ;
           const data = await response.json();
-          setInfo(data);
+          const data1 = data.filter((inf:obt)=>inf.id === 1)
+          setInfo(data1);
           setLoading(false);
         }catch(err){
           setError(err as string);
